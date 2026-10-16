@@ -1,0 +1,6 @@
+.env
+storage/uploads/*
+!storage/uploads/.htaccess
+*.sql.bak
+*.log
+.DS_Store

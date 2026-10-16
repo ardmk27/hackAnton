@@ -1,0 +1,6 @@
+# Salin menjadi NAMA.csv (hapus baris ini), lalu letakkan foto NAMA.jpg di folder yang sama.
+# Satu baris = satu anak pada satu periode. Kosongkan sel yang memang kosong di formulir.
+# Isi kebenaran dasar SAAT menulis halaman uji, bukan membaca ulang dari foto.
+nomor_pendaftaran,nama_peserta,tanggal_lahir,jenis_kelamin,periode_pengukuran,bb_kg,tb_pb_cm,lingkar_kepala_cm,lila_cm
+001,Siti Aminah,2025-02-14,P,2026-10,9.2,73.0,,
+002,Budi Santoso,2024-06-03,L,2026-10,11.4,82.0,,

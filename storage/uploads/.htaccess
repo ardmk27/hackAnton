@@ -1,0 +1,8 @@
+# Foto tidak boleh diakses langsung lewat URL; hanya lewat photo.php (dengan login).
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>

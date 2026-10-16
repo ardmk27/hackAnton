@@ -1,0 +1,23 @@
+services:
+  web:
+    build: .
+    ports: ["8080:80"]
+    environment:
+      DB_HOST: db
+      DB_NAME: kader_cukup_foto
+      DB_USER: kcf
+      DB_PASS: kcf_dev_only
+      DEMO_SEED_ENABLED: "true"
+    depends_on: [db]
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: kader_cukup_foto
+      MARIADB_USER: kcf
+      MARIADB_PASSWORD: kcf_dev_only
+      MARIADB_ROOT_PASSWORD: root_dev_only
+    volumes:
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+      - dbdata:/var/lib/mysql
+volumes:
+  dbdata:

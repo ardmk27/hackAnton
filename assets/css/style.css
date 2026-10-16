@@ -1,0 +1,28 @@
+.card-stat .display-6 { font-weight: 600; }
+.auth-card { max-width: 480px; margin: 2rem auto; }
+.code-box {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.4rem; letter-spacing: .08em; background: #fff8e1;
+  border: 2px dashed #f0ad00; border-radius: .5rem; padding: .75rem 1rem; text-align: center;
+  user-select: all;
+}
+
+/* Halaman review */
+.source-photo-wrap { max-height: 45vh; overflow: auto; background: #222; border-radius: .5rem; text-align: center; }
+.source-photo-wrap img { transform-origin: top left; max-width: none; display: block; margin: 0 auto; }
+.review-table th { white-space: nowrap; font-size: .8rem; }
+.review-table td { min-width: 90px; vertical-align: middle; }
+.review-table td.c-nama { min-width: 170px; }
+.review-table td.c-ket  { min-width: 150px; }
+.review-table td.c-flag { min-width: 70px; text-align: center; }
+.review-table .cell-empty { background-color: #fff3cd; }
+.review-table tr.row-flagged > td:first-child { border-left: 4px solid #ffc107; }
+.review-table tr.row-error > td:first-child { border-left: 4px solid #dc3545; }
+.draft-banner { border-left: 5px solid #ffc107; }
+.confirmed-banner { border-left: 5px solid #198754; }
+.mock-banner { border-left: 5px solid #6f42c1; background: #f3ecfd; }
+.loading-overlay {
+  position: fixed; inset: 0; background: rgba(255,255,255,.85); z-index: 2000;
+  display: none; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;
+}
+.loading-overlay.show { display: flex; }
